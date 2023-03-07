@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var nome = prompt('Qual seu nome')
+        window.alert(`Olá ${nome.toUpperCase()}, seja bem vindo`)
+       var n1 = Number(prompt('digite um numero'))
+       var n2 = Number(prompt('digite outro numero'))
+       var sal = Number(prompt('digite o salário'))
+       var s = n1 + n2
+       window.alert(`A soma dos valores ${n1 } e ${n2 } é ${s} `)
+       window.alert(`Seu salário é ${sal.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}`)
+    
+</script>
+    <!-- n1.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'})-->
+</body>
+</html>
