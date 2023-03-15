@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        div {
+            border: 1px solid black;
+            height: 20px;
+            max-width: 500px;
+
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Treinando js</h1>
+
+   <div id="resul"></div>
+
+   <input type="number" name="txtn1" id="txtn1"> +
+   <input type="number" name="txtn2" id="txtn2">
+   <input type="button" value="somar" onclick="somar()">
+
+   <input type="number" name="txtn1" id="txtn1-sub"> -
+   <input type="number" name="txtn2" id="txtn2-sub">
+   <input type="button" value="somar" onclick="subtrair()">
+    <script>
+        function somar () {
+            val1 = document.getElementById('txtn1')
+            val2 = document.getElementById('txtn2')
+            n1 = Number(val1.value)
+            n2 = Number(val2.value)
+            s = n1 + n2 
+            resul.innerHTML = `A soma entre ${n1 } e ${n2 } é igual a ${s}`
+        } 
+        function subtrair () {
+            val1 = document.getElementById('txtn1-sub')
+            val2 = document.getElementById('txtn2-sub')
+            n1 = Number(val1.value)
+            n2 = Number(val2.value)
+            s = n1 - n2 
+            resul.innerHTML = `A subtração entre ${n1 } e ${n2 } é igual a ${s}`
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-size: 1.1em;
+        }
+        body {
+            background-color: rgb(82, 96, 228);
+        }
+        header > h1 {
+            text-align: center;
+            color: #fff;
+            margin: 50px;
+        }
+        section {
+            background-color: #fff;
+            padding: 10px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+            
+        }
+        section > div {
+            margin: 0 auto;
+        }
+        section > div {
+            margin-bottom: 10px;
+            width: 350px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section > div > img {
+            height: 600px;
+            width: 400px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    <section>
+        <div id="msg">
+            aqui vai aparecer a mensagem
+        </div>
+        <div id="foto">
+            <img src="manha.png" alt="manha" id="imagem">
+        </div>
+    </section>
+    <footer>
+        <p>&copy: CursoemVideo</p>
+    </footer>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
