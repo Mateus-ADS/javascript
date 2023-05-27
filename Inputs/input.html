@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <form action="https://api.staticforms.xyz/submit" method="POST">
+        <input type="hidden" name="accessKey" value="165e24fa-4564-47a3-82db-eaac662793ff">
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Inputs/input.html?name=">
+
+       <label for="inputNome">Primeiro Nome:</label>
+       <input type="text" name="name" id="inputNome" maxlength="25" minlength="2">
+ 
+
+       <label for="inputEmail">Endereço de Email:</label>
+       <input type="email" name="email" id="inputEmail" required maxlength="50">
+       
+
+       <label for="textAreaMensagem">Mensagem:</label>
+       <textarea name="message" id="textAreaMensagem" required maxlength="100"></textarea>
+    
+       <button>Enviar Mensagem</button>
+    </form>
+</body>
+<script>
+   
+    
+</script>
+</html>
