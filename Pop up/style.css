@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#menu-container {
+    margin-top: -21px;
+    background-color: #333;
+    height: 5vh;
+}
+
+#menu-itens {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.3em;
+    list-style: none;
+    padding: 10px;
+}
+#menu-itens > li:hover {
+    color: rgb(154, 62, 62);
+    cursor: pointer;
+}
+#login-container {
+    display: none;
+    width: 800px;
+    height: 800px;
+    border: 1px solid #000;
+    box-shadow: -2px 3px 10px rgba(0, 0, 0, 0.29);
+    background-color: #333;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);   
+}
+
+#contact-list {
+    display: none;
+    list-style: none;
+}
